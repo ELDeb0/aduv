@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UnoVerse | Admin Protocol</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Tajawal:wght@300;500;700&display=swap" rel="stylesheet">
+    <script type="module" src="/main.js"></script>
     <style>
         :root { --bg-dark: #070707; --accent-yellow: #FFD700; --text-light: #F4F3EF; }
         body { background-color: var(--bg-dark); color: var(--text-light); font-family: 'Tajawal', sans-serif; margin: 0; }
@@ -283,7 +284,7 @@
             }
 
             products.forEach(p => {
-                let statusText = p.status === 'offer' ? 'عرض خاص' : (p.status === 'out' ? 'نفذت' : 'متاح');
+                let statusText = p.status === 'offer' ? 'ع��ض خاص' : (p.status === 'out' ? 'نفذت' : 'متاح');
                 let discountText = p.discount ? `${p.discount} ج.م` : '-';
                 let sizesText = p.sizes ? p.sizes.join(' | ') : 'غير محدد';
                 
